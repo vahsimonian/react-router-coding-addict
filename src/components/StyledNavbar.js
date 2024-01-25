@@ -1,39 +1,39 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className='navbar'>
+    <nav className="navbar">
       <NavLink
-        to='/'
+        to="/"
         // className={({ isActive }) => (isActive ? 'link active' : 'link')}
         style={({ isActive }) => ({ color: isActive ? 'blue' : 'grey' })}
       >
         Home
       </NavLink>
       <NavLink
-        to='/about'
+        to="/about"
         // className={({ isActive }) => (isActive ? 'link active' : 'link')}
         style={({ isActive }) => ({ color: isActive ? 'blue' : 'grey' })}
       >
         About
       </NavLink>
       <NavLink
-        to='/products'
+        to="/products"
         // className={({ isActive }) => (isActive ? 'link active' : 'link')}
         style={({ isActive }) => ({ color: isActive ? 'blue' : 'grey' })}
       >
         Products
       </NavLink>
       <NavLink
-        to='/login'
+        to="/login"
         // className={({ isActive }) => (isActive ? 'link active' : 'link')}
         style={({ isActive }) => ({ color: isActive ? 'blue' : 'grey' })}
       >
         Login
       </NavLink>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
